@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTBOLKA — Streetwear</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topbar">YANGI KOLLEKSIYA — 2026 | BIRINCHI BUYURTMAGA 10% CHEGIRMA</div>
+
+    <header>
+        <a href="#home" class="logo">FUTBO<span>LK</span>A.</a>
+        <nav>
+            <a href="#home">Bosh sahifa</a>
+            <a href="#products">Katalog</a>
+            <a href="#collection">Kolleksiya</a>
+            <a href="#about">Biz haqimizda</a>
+        </nav>
+        <div class="header-actions">
+            <button id="searchBtn" aria-label="Qidirish">⌕</button>
+            <button id="cartBtn" aria-label="Savat">🛍 <span id="cartCount">0</span></button>
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+    </header>
+
+    <div class="search-box" id="searchBox">
+        <input type="text" id="searchInput" placeholder="Futbolka nomini yozing...">
+        <button id="closeSearch">✕</button>
+    </div>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">YANGI MAVSUM · 2026</span>
+                <h1>O'Z USLUBINGNI<br>YARAT<span>.</span></h1>
+                <p>Oddiy kiyim emas. Bu sening xaraktering. O'z uslubingni top va har kuni boshqacha ko'rin.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn primary">KATALOGNI KO'RISH ↗</a>
+                    <a href="#collection" class="btn secondary">KOLLEKSIYA</a>
+                </div>
+                <div class="hero-stats">
+                    <div><strong>50+</strong><span>Yangi dizayn</span></div>
+                    <div><strong>2K+</strong><span>Mamnun mijoz</span></div>
+                    <div><strong>100%</strong><span>Sifatli mato</span></div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85" alt="Zamonaviy futbolka">
+                <div class="floating-card">
+                    <span>BESTSELLER</span>
+                    <h3>Basic Oversize</h3>
+                    <p>149 000 so'm</p>
+                </div>
+                <div class="round-sticker">NEW<br>DROP<br>2026</div>
+            </div>
+        </section>
+
+        <section class="brands">
+            <span>STREET STYLE</span>
+            <span>OVERSIZE</span>
+            <span>MINIMAL</span>
+            <span>PREMIUM COTTON</span>
+            <span>YOUR STYLE</span>
+        </section>
+
+        <section class="products section" id="products">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">BIZNING KATALOG</span>
+                    <h2>ENG ZO'R <span>FUTBOLKALAR</span></h2>
+                </div>
+                <p>Har bir detalda uslub.<br>Har bir kiyimda o'ziga xoslik.</p>
+            </div>
+
+            <div class="filters">
+                <button class="filter active" data-filter="all">Barchasi</button>
+                <button class="filter" data-filter="basic">Basic</button>
+                <button class="filter" data-filter="oversize">Oversize</button>
+                <button class="filter" data-filter="print">Print</button>
+                <button class="filter" data-filter="premium">Premium</button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <article class="product-card" data-category="basic" data-name="Classic White" data-price="99000">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85" alt="Classic White futbolka">
+                        <span class="tag">TOP</span>
+                        <button class="quick-view" data-name="Classic White" data-price="99000">KO'RISH ↗</button>
+                        <button class="heart">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <div><h3>Classic White</h3><p>Basic Collection</p></div>
+                        <strong>99 000 so'm</strong>
+                    </div>
+                    <div class="colors"><i class="white"></i><i class="black"></i><i class="gray"></i></div>
+                    <button class="add-cart">SAVATGA QO'SHISH +</button>
+                </article>
+
+                <article class="product-card" data-category="oversize" data-name="Urban Black" data-price="149000">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=700&q=85" alt="Urban Black futbolka">
+                        <span class="tag green-tag">YANGI</span>
+                        <button class="quick-view" data-name="Urban Black" data-price="149000">KO'RISH ↗</button>
+                        <button class="heart">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <div><h3>Urban Black</h3><p>Oversize Collection</p></div>
+                        <strong>149 000 so'm</strong>
+                    </div>
+                    <div class="colors"><i class="black"></i><i class="gray"></i><i class="green"></i></div>
+                    <button class="add-cart">SAVATGA QO'SHISH +</button>
+                </article>
+
+                <article class="product-card" data-category="print" data-name="Graphic Energy" data-price="179000">
+                    <div class="product-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6WyMx2JcH9ComVs5gMdiITbdzsCwaEdAXCJFIwmUayA&s=10" alt="Graphic Energy futbolka">
+                        <span class="tag">TREND</span>
+                        <button class="quick-view" data-name="Graphic Energy" data-price="179000">KO'RISH ↗</button>
+                        <button class="heart">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <div><h3>Graphic Energy</h3><p>Print Collection</p></div>
+                        <strong>179 000 so'm</strong>
+                    </div>
+                    <div class="colors"><i class="black"></i><i class="white"></i></div>
+                    <button class="add-cart">SAVATGA QO'SHISH +</button>
+                </article>
+
+                <article class="product-card" data-category="premium" data-name="Premium Sand" data-price="199000">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=700&q=85" alt="Premium Sand futbolka">
+                        <button class="quick-view" data-name="Premium Sand" data-price="199000">KO'RISH ↗</button>
+                        <button class="heart">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <div><h3>Premium Sand</h3><p>Premium Collection</p></div>
+                        <strong>199 000 so'm</strong>
+                    </div>
+                    <div class="colors"><i class="sand"></i><i class="white"></i><i class="black"></i></div>
+                    <button class="add-cart">SAVATGA QO'SHISH +</button>
+                </article>
+
+                <article class="product-card" data-category="oversize" data-name="Street Grey" data-price="159000">
+                    <div class="product-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAaAdWe1CzTQgEg4IJbHk8kmmLDJPpvDzPGi9PAuL64g&s=10" alt="Street Grey uslubi">
+                        <span class="tag green-tag">-15%</span>
+                        <button class="quick-view" data-name="Street Grey" data-price="159000">KO'RISH ↗</button>
+                        <button class="heart">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <div><h3>Street Grey</h3><p>Street Collection</p></div>
+                        <strong>159 000 so'm</strong>
+                    </div>
+                    <div class="colors"><i class="gray"></i><i class="black"></i><i class="white"></i></div>
+                    <button class="add-cart">SAVATGA QO'SHISH +</button>
+                </article>
+
+                <article class="product-card" data-category="basic" data-name="Ocean Blue" data-price="119000">
+                    <div class="product-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStXUBhXnLxh-TGFPEdee-Hh0-xcgyp2WGxPggTGf4M7Q&s=10" alt="Ocean Blue futbolka">
+                        <button class="quick-view" data-name="Ocean Blue" data-price="119000">KO'RISH ↗</button>
+                        <button class="heart">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <div><h3>Ocean Blue</h3><p>Basic Collection</p></div>
+                        <strong>119 000 so'm</strong>
+                    </div>
+                    <div class="colors"><i class="blue"></i><i class="white"></i><i class="black"></i></div>
+                    <button class="add-cart">SAVATGA QO'SHISH +</button>
+                </article>
+
+                <article class="product-card" data-category="print" data-name="Wild Spirit" data-price="189000">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=700&q=85" alt="Wild Spirit futbolka">
+                        <span class="tag">LIMITED</span>
+                        <button class="quick-view" data-name="Wild Spirit" data-price="189000">KO'RISH ↗</button>
+                        <button class="heart">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <div><h3>Wild Spirit</h3><p>Print Collection</p></div>
+                        <strong>189 000 so'm</strong>
+                    </div>
+                    <div class="colors"><i class="black"></i><i class="green"></i></div>
+                    <button class="add-cart">SAVATGA QO'SHISH +</button>
+                </article>
+
+                <article class="product-card" data-category="premium" data-name="Essential Cream" data-price="219000">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=700&q=85" alt="Essential Cream futbolka">
+                        <span class="tag green-tag">PREMIUM</span>
+                        <button class="quick-view" data-name="Essential Cream" data-price="219000">KO'RISH ↗</button>
+                        <button class="heart">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <div><h3>Essential Cream</h3><p>Premium Collection</p></div>
+                        <strong>219 000 so'm</strong>
+                    </div>
+                    <div class="colors"><i class="sand"></i><i class="white"></i></div>
+                    <button class="add-cart">SAVATGA QO'SHISH +</button>
+                </article>
+            </div>
+            <p class="empty-message" id="emptyMessage">Bunday futbolka topilmadi.</p>
+        </section>
+
+        <section class="promo" id="collection">
+            <div class="promo-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnGGS-S3l3fZsQn3SmXGRZI7lFJvL4Ur7iTwKxyp04EA&s=10" alt="Streetwear kolleksiyasi">
+            </div>
+            <div class="promo-content">
+                <span class="eyebrow">LIMITED COLLECTION</span>
+                <h2>KO'CHA<br>USLUBI.<br><span>YANGI QOIDA.</span></h2>
+                <p>O'zingni boshqalardan ajratib tur. Yangi oversize kolleksiyamiz bilan erkinlikni his qil.</p>
+                <a href="#products" class="btn primary">KOLLEKSIYANI KO'RISH ↗</a>
+                <div class="promo-number">02 / 06</div>
+            </div>
+        </section>
+
+        <section class="features section">
+            <div class="section-heading">
+                <div><span class="eyebrow">NIMA UCHUN BIZ?</span><h2>FAQAT <span>SIFAT.</span></h2></div>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card"><span>01</span><div class="feature-icon">✳</div><h3>Sifatli mato</h3><p>Yumshoq, qulay va uzoq vaqt xizmat qiladigan materiallar.</p></div>
+                <div class="feature-card"><span>02</span><div class="feature-icon">◇</div><h3>Zamonaviy dizayn</h3><p>Har bir ko'rinish uchun o'ziga xos va zamonaviy modellar.</p></div>
+                <div class="feature-card"><span>03</span><div class="feature-icon">↗</div><h3>Tez yetkazish</h3><p>Buyurtmangizni imkon qadar tez va xavfsiz yetkazamiz.</p></div>
+                <div class="feature-card"><span>04</span><div class="feature-icon">♡</div><h3>Mijozlar uchun</h3><p>Sizning qulayligingiz va mamnunligingiz biz uchun muhim.</p></div>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <span>YOUR STYLE. YOUR RULES.</span>
+            <h2>KIYIN. HIS QIL.<br><span>O'ZING BO'L.</span></h2>
+            <a href="#products" class="btn primary">XARIDNI BOSHLASH ↗</a>
+        </section>
+
+        <section class="newsletter section" id="about">
+            <div><span class="eyebrow">BIZ BILAN QOLING</span><h2>YANGILIKLARDAN<br><span>BIRINCHI BO'LIB XABAR TOP.</span></h2></div>
+            <form id="subscribeForm">
+                <input type="email" id="emailInput" placeholder="Email manzilingiz" required>
+                <button type="submit">OBUNA BO'LISH ↗</button>
+                <p id="subscribeMessage"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-brand"><a href="#home" class="logo">FUTBO<span>LK</span>A.</a><p>Har bir kun uchun yangi uslub. O'zligingni kiyim orqali ko'rsat.</p></div>
+            <div><h3>MENYU</h3><a href="#home">Bosh sahifa</a><a href="#products">Katalog</a><a href="#collection">Kolleksiya</a></div>
+            <div><h3>YORDAM</h3><a href="#about">Biz haqimizda</a><a href="#about">Bog'lanish</a><a href="#about">Yetkazib berish</a></div>
+            <div><h3>IJTIMOIY TARMOQLAR</h3><a href="https://instagram.com">Instagram ↗</a><a href="https://t.me">Telegram ↗</a><a href="https://youtube.com">YouTube ↗</a></div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 FUTBOLKA. Barcha huquqlar himoyalangan.</span><a href="#home">YUQORIGA ↑</a></div>
+    </footer>
+
+    <div class="overlay" id="overlay"></div>
+    <aside class="cart-panel" id="cartPanel">
+        <div class="cart-header"><h2>SAVATIM</h2><button id="closeCart">✕</button></div>
+        <div id="cartItems"></div>
+        <div class="cart-bottom"><div><span>Jami:</span><strong id="cartTotal">0 so'm</strong></div><button id="checkoutBtn">BUYURTMA BERISH ↗</button><p id="checkoutMessage"></p></div>
+    </aside>
+
+    <div class="modal" id="productModal">
+        <button class="modal-close" id="closeModal">✕</button>
+        <span class="eyebrow">MAHSULOT MA'LUMOTI</span>
+        <h2 id="modalName"></h2>
+        <p id="modalPrice"></p>
+        <label for="sizeSelect">O'lchamni tanlang</label>
+        <select id="sizeSelect"><option value="S">S</option><option value="M" selected>M</option><option value="L">L</option><option value="XL">XL</option></select>
+        <button class="btn primary" id="modalAdd">SAVATGA QO'SHISH +</button>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
